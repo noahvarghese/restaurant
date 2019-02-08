@@ -1,0 +1,80 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 7, 2019, 5:06:59 AM
+    Author     : user
+*/
+
+body {
+    overflow-x: hidden;
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 100vw;
+}
+
+@media (min-width: 0) {
+
+    #loader {
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+    }
+    
+    #loadingScreen {
+        display: inline-block;
+        margin-top: 20vh;
+        border: 16px solid #f3f3f3; /* Light grey */
+        border-top: 16px solid #3498db; /* Blue */
+        border-radius: 50%;
+        width: 20vw;;
+        height: 20vw;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+
+    }
+
+    @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+    }
+
+    #errorScreen {
+        display: none;
+        width: 100vw;
+    }
+
+    #restaurantScreen {
+        display: none;
+        width: 100vw;
+    }
+    /* Whole Container */
+    .restaurant {
+        display: inline;
+        height: 20vh;
+        width: 100vw;
+    }
+
+    /*  image Container */
+    .img_container {
+        width: 20vh;
+        height: 20vh;
+    }
+
+    .img_url {
+        height: 20vh;
+        width: 20vh;
+    }
+
+    .reviews img {
+        display: inline;
+        padding-right: 1vw;
+    }
+}
