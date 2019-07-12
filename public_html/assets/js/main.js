@@ -252,6 +252,7 @@ const displayResults = results => {
 
     for (let i = 0; i < backButtons.length; i++) {
         backButtons[i].onclick = function () {
+            document.getElementById("restaurantScreen").innerHTML = "";
             document.getElementById("restaurantScreen").style.display = "none";
             document.getElementById("default").style.display = "block";
         }
