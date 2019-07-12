@@ -15,66 +15,111 @@ body {
     width: 100vw;
 }
 
-@media (min-width: 0) {
+h1, h2 {
+    margin-bottom: 1em !important;
+}
 
-    #loader {
-        width: 100vw;
-        height: 100vh;
-        text-align: center;
-    }
-    
-    #loadingScreen {
-        display: inline-block;
-        margin-top: 20vh;
-        border: 16px solid #f3f3f3; /* Light grey */
-        border-top: 16px solid #3498db; /* Blue */
-        border-radius: 50%;
-        width: 20vw;;
-        height: 20vw;
-        -webkit-animation: spin 2s linear infinite;
-        animation: spin 2s linear infinite;
-    }
+.back-button:last-of-type {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
 
-    @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
+.media {
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 1em;
+}
 
-    }
+.row {
+    margin-top: 3em;
+}
 
-    @-webkit-keyframes spin {
-        0% { -webkit-transform: rotate(0deg); }
-        100% { -webkit-transform: rotate(360deg); }
-    }
+.buttons {
+    margin-top: 4em;
+}
 
-    #errorScreen {
-        display: none;
-        width: 100vw;
-    }
+.buttons > p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
 
-    #restaurantScreen {
-        display: none;
-        width: 100vw;
-    }
-    /* Whole Container */
-    .restaurant {
-        display: inline;
-        height: 20vh;
-        width: 100vw;
-    }
+#loader {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
 
-    /*  image Container */
-    .img_container {
-        width: 20vh;
-        height: 20vh;
-    }
+#loadingScreen {
+    display: inline-block;
+    margin-top: 20vh;
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 20vw;;
+    height: 20vw;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
 
-    .img_url {
-        height: 20vh;
-        width: 20vh;
-    }
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 
-    .reviews img {
-        display: inline;
-        padding-right: 1vw;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+#errorScreen {
+    display: none;
+    width: 100vw;
+}
+
+#restaurantScreen {
+    display: none;
+    width: 100vw;
+}
+/* Whole Container */
+.restaurant {
+    display: inline;
+    height: 20vh;
+    width: 100vw;
+}
+
+.reviews, .displayAddress, .categories {
+    margin-top: 1em;
+}
+
+.categories {
+    display: block;
+}
+
+.directions {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/*  image Container */
+.img_container {
+    width: 20vh;
+    height: 20vh;
+}
+
+.img_url {
+    height: 20vh;
+    width: 20vh;
+}
+
+.reviews img {
+    display: inline;
+    padding-right: 1vw;
+}
+
+@media (min-width: 1080px) {
+    .media {
+        width: 40vw;
+        margin-left: 30vw;
     }
 }

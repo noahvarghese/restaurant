@@ -20,6 +20,30 @@ and open the template in the editor.
     </head>
     <body>
         <h1 class="display-1 text-center">Random Restaurants</h1>
+        <div id="default" class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-2 form-group" id="locationFormGroup">
+                    <label class="control-label">Area to Search</label>
+                    <input type="text" id="location" placeholder="Address, Postal Code, or City" class="form-control"/>
+                    <span id="locationHelpBlock" class="help-block"></span>
+                </div>
+                <div class="col-md-2">
+                    <label class="control-label">Radius</label>
+                    <select id="radius" class="form-control">
+                        <option value="2000">2 kilometres</option>
+                        <option value="5000">5 kilometres</option>
+                        <option value="10000">10 kilometres</option>
+                        <option value="20000">20 kilometres</option>
+                        <option value="50000">50 kilometres</option>
+                    </select>
+                </div>
+            </div>
+            <div class="text-center buttons">
+                <button type="button" id="submit" class='btn btn-primary btn-lg'>SUBMIT</button>
+                <p>OR</p>
+                <button type="button" id="locate" class='btn btn-primary btn-lg'>LOCATE ME</button>
+            </div>
+        </div>
         <div id="loader" class="container">
             <div id="loadingScreen"></div>
         </div>
