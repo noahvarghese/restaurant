@@ -216,7 +216,7 @@ const displayResults = results => {
         let reviewImage = document.createElement("img");
         reviewImage.classList.add("rating", "img-responsive");
 
-        let srcAttribute = "assets/img/yelp_stars/web_and_ios/small/small_" + business["rating"] + ".png";
+        let srcAttribute = "assets/img/stars/small_" + business["rating"] + ".png";
         reviewImage.setAttribute("src", srcAttribute);
         reviewImage.setAttribute("alt", "Rating");
         reviewContainer.appendChild(reviewImage);
